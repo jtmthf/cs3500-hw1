@@ -2,6 +2,7 @@
   "name": "template",
   "version": "1.0.0",
   "description": "Template for node.js projects in CS3500",
+  "repository": "jtmthf/CS3500-Node-Starter-Template",
   "main": "index.js",
   "scripts": {
     "test": "make test"
@@ -9,6 +10,8 @@
   "author": "Jack Moore",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
     "chai": "^3.5.0",
     "mocha": "^2.4.4"
   }
