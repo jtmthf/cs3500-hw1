@@ -1,11 +1,11 @@
 const app = {
 	
-	nothing: "This app does nothing",
+  nothing: 'This app does nothing',
 	
-	run: function () {
-		console.log(nothing);
-	}
-}
+  run: function () {
+    //does nothing
+  }
+};
 
 
 module.exports = app;

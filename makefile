@@ -3,7 +3,7 @@ SRC = $(wildcard src/*.js)
 LIB = $(SRC:src/%.js=lib/%.js)
 CURRENT = $(shell basename "$$PWD")
 
-build: $(LIB)
+build: $(LIB) lint
 
 lib/%.js: src/%.js
 	@mkdir -p $(@D)
@@ -13,6 +13,9 @@ lib/%.js: src/%.js
 
 test: build
 	@$(BIN)/mocha -u tdd --reporter spec
+	
+lint: 
+	@eslint src/**
 
 clean:
 	@rm -f $(LIB) $(CURRENT)
