@@ -1,6 +1,6 @@
 {
   "name": "template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Template for node.js projects in CS3500",
   "repository": "jtmthf/CS3500-Node-Starter-Template",
   "main": "index.js",
