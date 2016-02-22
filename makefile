@@ -13,8 +13,8 @@ lib/%.js: src/%.js
 
 test: build
 	@$(BIN)/mocha -u tdd --reporter spec
-	
-lint: 
+
+lint:
 	@eslint src/**
 
 clean:
@@ -46,4 +46,3 @@ release-major: build test
 
 publish:
 	git push --tags origin HEAD:master
-	

@@ -1,6 +1,6 @@
 ===============================================================================
 readme.txt
-CS3500 Template
+CS3500 hw1
 
 Created by Jack Moore on 1/28/16.
 
@@ -17,8 +17,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 == Requirements
 ===============================================================================
 
-- Node.js v^1.3.10
-- NPM v^0.10.25
+- NPM v^1.3
+- Node v^0.10
 
 ===============================================================================
 == Instructions to run from GitHub

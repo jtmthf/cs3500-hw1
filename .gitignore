@@ -31,3 +31,6 @@ node_modules
 
 #OS X metadata
 .DS_Store
+
+#executable
+cs3500-hw1
