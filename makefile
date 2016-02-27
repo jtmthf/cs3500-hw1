@@ -3,7 +3,7 @@ SRC = $(wildcard src/*.js)
 LIB = $(SRC:src/%.js=lib/%.js)
 CURRENT = $(shell basename "$$PWD")
 
-build: $(LIB) lint
+build: $(LIB) lint install
 
 lib/%.js: src/%.js
 	@mkdir -p $(@D)
