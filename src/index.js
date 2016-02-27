@@ -26,8 +26,6 @@ function lex() {
   });
 }
 
-module.exports = () => {
-  lex().then(() => {
-
-  });
-};
+module.exports = (() => {
+  lex().then(() => {});
+})();

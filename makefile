@@ -8,7 +8,7 @@ build: $(LIB) lint
 lib/%.js: src/%.js
 	@mkdir -p $(@D)
 	@$(BIN)/babel --presets es2015 $< > $@
-	@echo '#!/bin/bash\nnode index.js' > $(CURRENT)
+	@echo '#!/bin/bash\nnode index.js' > mylexer
 	@chmod 755 $(CURRENT)
 
 test: build
