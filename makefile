@@ -3,13 +3,14 @@ SRC = $(wildcard src/*.js)
 LIB = $(SRC:src/%.js=lib/%.js)
 CURRENT = $(shell basename "$$PWD")
 
-build: $(LIB) lint install
+build: $(LIB) lint
 
 lib/%.js: src/%.js
+	@npm install
 	@mkdir -p $(@D)
 	@$(BIN)/babel --presets es2015 $< > $@
 	@echo '#!/bin/bash\nnode index.js' > mylexer
-	@chmod 755 $(CURRENT)
+	@chmod 755 mylexer
 
 test: build
 	@$(BIN)/mocha -u tdd --reporter spec
